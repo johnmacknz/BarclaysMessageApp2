@@ -1,5 +1,6 @@
 package com.example.controllerTests.springhttpunittests;
 
+import com.example.TestUtility;
 import com.example.controllers.MessageController;
 import com.example.entity.Message;
 import com.example.services.MessageService;
@@ -48,7 +49,7 @@ public class MessageControllerHttpTests {
     @Test
     public void testGetAlMessageFromHttpRequest() throws Exception {
 
-        when(messageService.findAll()).thenReturn(createMessageList());
+        when(messageService.findAll()).thenReturn(TestUtility.createMessageList());
 
         ResultActions resultActions = this.mockMvc.perform(
                         MockMvcRequestBuilders.get("/messages")
@@ -64,14 +65,14 @@ public class MessageControllerHttpTests {
         assertEquals(3, actualMessages.length);
     }
 
-    private Iterable<Message> createMessageList()  {
-        ArrayList<Message> messages = new ArrayList<>();
-        Message message1 = new Message("First message");
-        Message message2 = new Message("Second message");
-        Message message3 = new Message("Third message");
-        messages.add(message1);
-        messages.add(message3);
-        messages.add(message2);
-        return messages;
-    }
+//    private Iterable<Message> createMessageList()  {
+//        ArrayList<Message> messages = new ArrayList<>();
+//        Message message1 = new Message("First message");
+//        Message message2 = new Message("Second message");
+//        Message message3 = new Message("Third message");
+//        messages.add(message1);
+//        messages.add(message3);
+//        messages.add(message2);
+//        return messages;
+//    }
 }

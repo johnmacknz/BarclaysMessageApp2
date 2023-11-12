@@ -1,4 +1,4 @@
-package com.example.controllerTests.springintegrationunittests;
+package com.example.controller.springintegrationunittests;
 
 import com.example.controllers.MessageController;
 import com.example.services.MessageService;

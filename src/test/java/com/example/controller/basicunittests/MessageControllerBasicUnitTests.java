@@ -1,4 +1,4 @@
-package com.example.controllerTests.basicunittests;
+package com.example.controller.basicunittests;
 
 import com.example.controllers.MessageController;
 import com.example.services.MessageService;

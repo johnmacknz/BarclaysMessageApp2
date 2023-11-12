@@ -1,4 +1,4 @@
-package com.example.servicetests.basicmessageserviceunittests;
+package com.example.service.basicmessageserviceunittests;
 
 import com.example.TestUtility;
 import com.example.dataaccess.MessageRepository;

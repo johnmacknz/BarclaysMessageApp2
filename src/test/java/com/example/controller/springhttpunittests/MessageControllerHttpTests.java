@@ -1,4 +1,4 @@
-package com.example.controllerTests.springhttpunittests;
+package com.example.controller.springhttpunittests;
 
 import com.example.controllers.MessageController;
 import com.example.entity.Message;

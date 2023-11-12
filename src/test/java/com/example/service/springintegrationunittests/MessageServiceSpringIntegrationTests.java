@@ -1,7 +1,6 @@
-package com.example.servicetests.springintegrationunittests;
+package com.example.service.springintegrationunittests;
 
 import com.example.TestUtility;
-import com.example.controllers.MessageController;
 import com.example.dataaccess.MessageRepository;
 import com.example.entity.Message;
 import com.example.services.MessageService;

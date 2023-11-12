@@ -12,7 +12,7 @@ public class MessageServiceImp implements MessageService{
     private MessageRepository messageRepository;
     @Override
     public Iterable<Message> findAll() {
-        return messageRepository.findAll();
+         return messageRepository.findAll();
     }
 
     @Autowired

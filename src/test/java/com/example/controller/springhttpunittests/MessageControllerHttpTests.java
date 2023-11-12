@@ -1,4 +1,4 @@
-package com.example.controllerTests.springhttpunittests;
+package com.example.controller.springhttpunittests;
 
 import com.example.TestUtility;
 import com.example.controllers.MessageController;
@@ -16,8 +16,6 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-
-import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;

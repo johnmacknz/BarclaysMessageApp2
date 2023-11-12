@@ -28,5 +28,6 @@ public class Populator {
         messageRepository.save(m3);
 
         Message m4 = new Message("Dave is the Best!");
+        messageRepository.save(m4);
     }
 }

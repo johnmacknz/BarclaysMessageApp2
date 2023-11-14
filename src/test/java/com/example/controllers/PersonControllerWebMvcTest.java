@@ -1,7 +1,7 @@
 package com.example.controllers;
 
 import com.example.entities.Person;
-import com.example.service.IPersonService;
+import com.example.service.PersonServiceInterface;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ import static org.mockito.Mockito.*;
 public class PersonControllerWebMvcTest {
 
     @MockBean
-    IPersonService personService;
+    PersonServiceInterface personService;
 
     @Autowired
     ObjectMapper mapper;

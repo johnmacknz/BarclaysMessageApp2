@@ -5,10 +5,8 @@ import com.example.entities.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-
 @Service
-public class PersonService implements IPersonService{
+public class PersonService implements PersonServiceInterface {
 
     PersonRepositoryInterface personRepository;
 

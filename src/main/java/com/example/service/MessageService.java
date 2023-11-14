@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class MessageService implements IMessageService{
+public class MessageService implements MessageServiceInterface {
 
     private final MessageRepositoryInterface messageRepository;
 

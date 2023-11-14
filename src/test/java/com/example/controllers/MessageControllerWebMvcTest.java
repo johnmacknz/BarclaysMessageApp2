@@ -1,7 +1,6 @@
 package com.example.controllers;
 
-import com.example.service.IMessageService;
-import com.example.service.MessageService;
+import com.example.service.MessageServiceInterface;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -19,7 +18,7 @@ import static org.mockito.Mockito.verify;
 class MessageControllerWebMvcTest {
 
     @MockBean
-    IMessageService mockMessageService;
+    MessageServiceInterface mockMessageService;
 
     @Autowired
     MockMvc mockMvc;
